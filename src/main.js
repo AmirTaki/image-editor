@@ -73,5 +73,8 @@ const updataFilter = () => {
     if(selectedFilter.id = 'brightness'){
         brightness = filterSlider.value
     }
+    else if (selectedFilter.id = 'saturation'){
+        saturation = filterSlider.value
+    }
 }
 
