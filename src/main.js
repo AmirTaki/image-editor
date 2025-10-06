@@ -85,3 +85,12 @@ const updataFilter = () => {
     applyFilter();
 }
 
+
+
+// rotate options
+
+rotateOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+        
+    })
+})
