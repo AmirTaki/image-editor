@@ -12,3 +12,10 @@ const saveImgBtn = document.querySelector('.save-img')
 
 let brightness = '100', saturation = '100', inversion = '0', grayscale = '0';
 let rotate = 0, flipHorizontal = 1, flipVertical  = 1;
+
+
+// load image
+const loadImage = () => {
+    let file =  fileInput.files[0]
+    
+}
