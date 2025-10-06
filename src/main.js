@@ -20,4 +20,8 @@ const loadImage = () => {
     if (!file) return;
     
     previewImg.src = URL.createObjectURL(file)
+    previewImg.addEventListener("load", () => {
+        resetFilterBtn.click()
+        document.querySelector(".container").classList.remove('disable');
+    })
 }
