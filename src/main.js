@@ -51,6 +51,11 @@ filterOptions.forEach((option) => {
             filterSlider.value = saturation;
             filterValue.innerText = `${saturation}%`
         }
+        else if(option.id === 'inversion'){
+            filterSlider.max = '100'
+            filterSlider.value = inversion;
+            filterValue.innerText = `${inversion}%`
+        }
     })
 });
 
