@@ -82,5 +82,6 @@ const updataFilter = () => {
     else {
         grayscale = filterSlider.value
     }
+    applyFilter();
 }
 
