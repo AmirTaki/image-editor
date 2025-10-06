@@ -70,6 +70,8 @@ const updataFilter = () => {
     filterValue.innerText = `${filterSlider.value}%`
     const selectedFilter = document.querySelector('.filter .active')
 
-    
+    if(selectedFilter.id = 'brightness'){
+        brightness = filterSlider.value
+    }
 }
 
