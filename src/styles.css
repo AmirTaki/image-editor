@@ -129,3 +129,32 @@ body{
   height: 100%;
   object-fit: contain;
 }
+
+.controls button{
+  padding: 11px 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.controls .reset-filter{
+  color: #6C757D;
+  border: 1px solid #6C757D;
+}
+.controls .reset-filter:hover{
+  color: #fff;
+  background: #6C757D;
+}
+.controls .choose-img{
+  background: #6C757D;
+  border: 1px solid #6C757D;
+}
+.controls .save-img{
+  margin-left: 5px;
+  background: #5372F0;
+  border: 1px solid #5372F0;
+}
