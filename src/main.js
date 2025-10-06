@@ -37,7 +37,8 @@ const applyFilter = () => {
 
 filterOptions.forEach((option) => {
     option.addEventListener("click", () => {
-        
+        document.querySelector('.active').classList.remove('active')
+        option.classList.add('active')
     })
 });
 
