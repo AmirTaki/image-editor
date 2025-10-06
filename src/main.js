@@ -123,4 +123,8 @@ const resetFilter = () => {
 const saveImage = () => {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext('2d')
+
+    canvas.width = previewImg.naturalWidth;
+    canvas.height = previewImg.naturalHeight
+
 }
