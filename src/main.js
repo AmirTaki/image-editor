@@ -134,4 +134,13 @@ const saveImage = () => {
     if(rotate !== 0){
         ctx.rotate(rotate * Math.PI / 180)
     }
+
+    ctx.scale(flipHorizontal, flipVertical)
+
+    ctx.drawImage(previewImg, -canvas.width / 2, -canvas.height /2, canvas.width, canvas.height)
+
+    const link = document.createElement('a')
+    link.download = 'image.jpg'
+    link.herf = canvas.toDataURL()
+    link.click()
 }
