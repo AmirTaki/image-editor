@@ -25,3 +25,9 @@ const loadImage = () => {
         document.querySelector(".container").classList.remove('disable');
     })
 }
+
+
+const applyFilter = () => {
+    previewImg.style.transform = `rotate(${rotate}deg) scale(${flipHorizontal}, ${flipVertical})`;
+    
+}
