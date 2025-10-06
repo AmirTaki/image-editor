@@ -56,6 +56,11 @@ filterOptions.forEach((option) => {
             filterSlider.value = inversion;
             filterValue.innerText = `${inversion}%`
         }
+        else {
+            filterSlider.max = "100";
+            filterSlider.value = grayscale;
+            filterValue.innerText = `${grayscale}%`;
+        }
     })
 });
 
