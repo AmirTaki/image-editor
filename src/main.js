@@ -1,5 +1,5 @@
-const x = document.querySelector('.')
-const x = document.querySelector('.')
+const  fileInput= document.querySelector('.file-input')
+const filterOptions = document.querySelector('.filter button')
 const x = document.querySelector('.')
 const x = document.querySelector('.')
 const x = document.querySelector('.')
