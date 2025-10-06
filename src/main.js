@@ -97,5 +97,8 @@ rotateOptions.forEach((option) => {
         else if (option.id === 'right'){
             rotate += 90
         }
+        else if (option.id === 'horizontal'){
+           flipHorizontal =  flipHorizontal === 1 ? -1 : 1
+        }
     })
 })
