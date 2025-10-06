@@ -46,6 +46,11 @@ filterOptions.forEach((option) => {
             filterSlider.value = brightness;
             filterValue.innerText = `${brightness}%`
         }
+        else if(option.id === 'saturation'){
+            filterSlider.max = '200'
+            filterSlider.value = saturation;
+            filterValue.innerText = `${saturation}%`
+        }
     })
 });
 
