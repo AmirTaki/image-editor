@@ -144,3 +144,7 @@ const saveImage = () => {
     link.herf = canvas.toDataURL()
     link.click()
 }
+
+
+filterSlider.addEventListener("input", updataFilter);
+resetFilterBtn.addEventListener("click", resetFilter)
