@@ -17,5 +17,7 @@ let rotate = 0, flipHorizontal = 1, flipVertical  = 1;
 // load image
 const loadImage = () => {
     let file =  fileInput.files[0]
+    if (!file) return;
     
+    previewImg.src = URL.createObjectURL(file)
 }
