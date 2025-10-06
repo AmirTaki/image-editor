@@ -31,7 +31,7 @@ const loadImage = () => {
 // filter
 const applyFilter = () => {
     previewImg.style.transform = `rotate(${rotate}deg) scale(${flipHorizontal}, ${flipVertical})`;
-    previewImg.style.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale})`;
+    previewImg.style.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
 }
 
 
@@ -128,4 +128,10 @@ const saveImage = () => {
     canvas.height = previewImg.naturalHeight
 
     ctx.filter = `brightness(${brightness}%) saturate(${saturation}%) invert(${inversion}%) grayscale(${grayscale}%)`;
+    
+    ctx.translate(canvas.width / 2, canvas.height /2);
+
+    if(rotate !== 0){
+        ctx.rotate(rotate * Math.PI / 180)
+    }
 }
