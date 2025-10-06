@@ -64,3 +64,12 @@ filterOptions.forEach((option) => {
     })
 });
 
+
+//  updata filter
+const updataFilter = () => {
+    filterValue.innerText = `${filterSlider.value}%`
+    const selectedFilter = document.querySelector('.filter .active')
+
+    
+}
+
