@@ -76,5 +76,11 @@ const updataFilter = () => {
     else if (selectedFilter.id = 'saturation'){
         saturation = filterSlider.value
     }
+    else if (selectedFilter.id = 'inversion'){
+        inversion = filterSlider.value
+    }
+    else {
+        grayscale = filterSlider.value
+    }
 }
 
