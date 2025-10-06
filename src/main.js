@@ -39,6 +39,7 @@ filterOptions.forEach((option) => {
     option.addEventListener("click", () => {
         document.querySelector('.active').classList.remove('active')
         option.classList.add('active')
+        filterName.innerText = option.innerText;
     })
 });
 
