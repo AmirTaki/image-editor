@@ -1,0 +1,6 @@
+const x = document.querySelector('.')
+const x = document.querySelector('.')
+const x = document.querySelector('.')
+const x = document.querySelector('.')
+const x = document.querySelector('.')
+const x = document.querySelector('.')
