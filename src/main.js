@@ -116,3 +116,11 @@ const resetFilter = () => {
     filterOptions[0].click()
     applyFilter()
 }
+
+
+// save image
+
+const saveImage = () => {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext('2d')
+}
