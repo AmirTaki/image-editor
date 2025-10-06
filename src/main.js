@@ -1,5 +1,5 @@
 const  fileInput= document.querySelector('.file-input')
-const filterOptions = document.querySelector('.filter button')
+const filterOptions = document.querySelectorAll('.filter button')
 const filterName = document.querySelector('.filter-info .name')
 const filterValue = document.querySelector('.filter-info .value')
 const filterSlider = document.querySelector('.slider input') 
@@ -35,7 +35,7 @@ const applyFilter = () => {
 }
 
 
-filterOptions.forEach((option) => {
+filterOptions.forEach(option => {
     option.addEventListener("click", () => {
         document.querySelector('.active').classList.remove('active')
         option.classList.add('active')
@@ -89,7 +89,7 @@ const updataFilter = () => {
 
 // rotate options
 
-rotateOptions.forEach((option) => {
+rotateOptions.forEach(option => {
     option.addEventListener('click', () => {
         if(option.id === 'left'){
             rotate -= 90;
@@ -141,7 +141,7 @@ const saveImage = () => {
 
     const link = document.createElement('a')
     link.download = 'image.jpg'
-    link.herf = canvas.toDataURL()
+    link.href = canvas.toDataURL()
     link.click()
 }
 
@@ -151,3 +151,4 @@ resetFilterBtn.addEventListener("click", resetFilter)
 saveImgBtn.addEventListener('click', saveImage)
 fileInput.addEventListener('change', loadImage)
 chooseImgBtn.addEventListener('click', () => fileInput.click())
+
