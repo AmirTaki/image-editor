@@ -91,6 +91,11 @@ const updataFilter = () => {
 
 rotateOptions.forEach((option) => {
     option.addEventListener('click', () => {
-        
+        if(option.id === 'left'){
+            rotate -= 90;
+        }
+        else if (option.id === 'right'){
+            rotate += 90
+        }
     })
 })
