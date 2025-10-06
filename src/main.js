@@ -40,6 +40,12 @@ filterOptions.forEach((option) => {
         document.querySelector('.active').classList.remove('active')
         option.classList.add('active')
         filterName.innerText = option.innerText;
+
+        if(option.id === 'brightness'){
+            filterSlider.max = '200'
+            filterSlider.value = brightness;
+            filterValue.innerText = `${brightness}%`
+        }
     })
 });
 
